@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="CommonURL" value="google.com"/>  <!-- this value of commonurl will common within a suite level but can be used for a testcase above which parameter annotation have been used-->
+  <test  name="WindowsTest">
+	  <parameter name="WindowsTestUrl" value="windowsurl.com"/><!-- this value of commonurl will common within a test level but can be used for a testcase above which parameter annotation have been used-->
+    <classes>
+      <class name="test.BrowserType"/>
+      <class name="test.DesktopOSType"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="MobileTest">
+    <classes>
+      
+      <class name="test.MobileOSType"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

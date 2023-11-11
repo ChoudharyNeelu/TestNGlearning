@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Windows">
+  <test name="WindowTest">
+    <classes>
+      <class name="test.BrowserType">
+		  <methods>
+			  <exclude name="safaribrowser"/>
+		  </methods>
+	  </class>
+      <class name="test.DesktopOSType">
+		  	  <methods>
+			  <exclude name="iOS.*"></exclude>
+		  </methods>
+	  </class>
+      <class name="test.MobileOSType">
+		  	  <methods>
+			  <exclude name="iOSMobiledevice"></exclude>
+		  </methods>
+	  </class>
+    </classes>
+  </test> 
+  
+  <test name="iOSTest">
+    <classes>
+      <class name="test.BrowserType">
+		  <methods>
+			  <include name="safaribrowser"></include>
+		  </methods>
+	  </class>
+      <class name="test.DesktopOSType">
+		  	  <methods>
+			  <include name="iOS.*"></include>
+		  </methods>
+	  </class>
+      <class name="test.MobileOSType">
+		  	  <methods>
+			  <include name="iOSMobiledevice"></include>
+		  </methods>
+	  </class>
+    </classes>
+  </test> 
+   
+</suite> 

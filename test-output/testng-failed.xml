@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Windows]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="WindowTest(failed)">
+    <classes>
+      <class name="test.DesktopOSType">
+        <methods>
+          <include name="bfMethod"/>
+          <include name="windowsdevice"/>
+          <include name="afMethod"/>
+        </methods>
+      </class> <!-- test.DesktopOSType -->
+      <class name="test.BrowserType">
+        <methods>
+          <include name="bfTest"/>
+          <include name="chromebrowser"/>
+          <include name="bfSuite"/>
+          <include name="afTest"/>
+          <include name="afSuite"/>
+        </methods>
+      </class> <!-- test.BrowserType -->
+    </classes>
+  </test> <!-- WindowTest(failed) -->
+  <test thread-count="5" name="iOSTest(failed)">
+    <classes>
+      <class name="test.DesktopOSType">
+        <methods>
+          <include name="bfMethod"/>
+          <include name="windowsdevice"/>
+          <include name="afMethod"/>
+        </methods>
+      </class> <!-- test.DesktopOSType -->
+      <class name="test.BrowserType">
+        <methods>
+          <include name="bfTest"/>
+          <include name="bfSuite"/>
+          <include name="chromebrowser"/>
+          <include name="afTest"/>
+          <include name="afSuite"/>
+        </methods>
+      </class> <!-- test.BrowserType -->
+    </classes>
+  </test> <!-- iOSTest(failed) -->
+</suite> <!-- Failed suite [Windows] -->
